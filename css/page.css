@@ -1,3 +1,62 @@
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:900|Josefin+Sans:400);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;  content: '';
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+body {
+	background: #000;
+	color: #dbdbdb;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: "Josefin Sans", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+	color: #ffef99;
+	text-decoration: none;
+}
+
+a:hover,
+a:focus {
+	outline: none;
+	color: #ffd700 !important;
+}
+
+.related {
+	padding: 9em 1em;
+	text-align: center;
+	font-size: 1.5em;
+	line-height: 1.8;
+}
+
+@media screen and (max-width: 590px) {
+	.demos__item {
+		margin-bottom: 1.5em;
+	}
+}
 body {
 	overflow-y: scroll; /* prevent jump */
 	overflow-x: hidden;
@@ -233,7 +292,7 @@ body {
 	overflow: hidden;
 	width: 100%;
 	height: 100vh;
-	background: #2a2e39;
+	background: #000;
 	-webkit-transition: -webkit-transform 0.6s;
 	transition: transform 0.6s;
 	-webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
@@ -285,7 +344,7 @@ body {
 }
 
 .intro__title {
-	margin: 0 0 20px;
+	margin: 0 0 20px 10px;
 	font-weight: 900;
 	font-size: 4em;
 	font-family: "Playfair Display", Georgia, serif;
@@ -300,7 +359,7 @@ body {
 }
 
 .intro__description {
-	margin: 0 auto 0 1em;
+	margin: 0 auto 20px 1em;
 	line-height: 1.2;
 }
 
@@ -387,9 +446,11 @@ body {
 	overflow: hidden;
 	height: 22vw;
 	outline: none;
-	border: 5px solid #2a2e39;
+	border: 5px solid #000;
 	border-width: 0 5px 10px;
-	background: #2a2e39;
+	background: #ffd700;
+        cursor: pointer; /* hand-shaped cursor */
+        cursor: hand; /* for IE 5.x */
 }
 
 .item__image {
@@ -427,35 +488,6 @@ body {
 	opacity: 0;
 	-webkit-transform: translate3d(0, 20px, 0);
 	transform: translate3d(0, 20px, 0);
-}
-
-/* Color schemes */
-.theme-1 a {
-	color: #e28e51;
-}
-
-.theme-1,
-.theme-1 .intro {
-	background: #2b2827;
-}
-
-.theme-1 .item {
-	border-color: #2b2827;
-	background: #765136;
-}
-
-.theme-2 a {
-	color: #90be23;
-}
-
-.theme-2,
-.theme-2 .intro {
-	background: #21241f;
-}
-
-.theme-2 .item {
-	border-color: #21241f;
-	background: #74834f;
 }
 
 /* Media Queries */
