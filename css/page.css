@@ -490,6 +490,30 @@ body {
 	transform: translate3d(0, 20px, 0);
 }
 
+#earth {
+  position: fixed;
+  right: 15px;
+  top: -35px;
+  z-index: 20000;
+  width: 80px;
+  height: 80px;
+  background: url(http://farm9.staticflickr.com/8383/8605874902_3b680a6b78_k.jpg);
+  border-radius: 50%;
+  background-size: 210px;
+  box-shadow: inset 16px 0 40px 6px rgb(0, 0, 0),
+    inset -3px 0 6px 2px rgba(255, 255, 255, 0.2);
+  animation-name: rotate;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin: 50px auto;
+}
+
+@keyframes rotate {
+  from { background-position-x: 0px; }
+  to { background-position-x: 210px; }
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 1440px) {
