@@ -10,10 +10,8 @@
     <meta name="author" content="Codrops" />
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="css/pieces.css" />
     <link rel="stylesheet" type="text/css" href="css/page.css" />
     <link rel="stylesheet" type="text/css" href="css/door.css" />
-    <link rel="stylesheet" type="text/css" href="css/demo.css" />
     <script src="js/modernizr.custom.js"></script>
   </head>
   <body>
@@ -175,12 +173,11 @@
         <a href="http://tympanus.net/Development/3DGridEffect/">3D Grid Effect</a>
       </section>
     </div><!-- /container -->
-
     <div id="container-3" class="container">
       <header class="intro">
-        <img class="intro__image" src="img/header03.jpg" alt="Road"/>
+        <img class="intro__image" src="img/header03.jpg" alt="Glacier"/>
         <div class="intro__content">
-          <h1 class="intro__title">Common Paths</h1>
+          <h1 class="intro__title">On Serenity</h1>
           <div class="intro__subtitle">
             <div class="intro__description">
               A multi-panel layout with intro headers and image grids. Photo courtesy of <a href="http://instagram.com/danrubin/">Dan Rubin</a>.
@@ -195,39 +192,63 @@
           </div>
         </div><!-- /intro__content -->
       </header><!-- /intro -->
-      <main>
-		<div class="pieces" style="background-image: url(img/normal.jpg)" data-img-alt="url(img/alt.jpg)" data-img-code="url(img/code.jpg)"></div>
-		<div class="overlay-dev overlay--hidden"></div>
-		<div class="content__inner">
-			<div class="menu">
-				<ul class="menu__inner">
-					<li class="menu__item"><a class="menu__link" data-switch>On Interface Design</a></li>
-					<li class="menu__item"><a class="menu__link" data-switch>Portfolio</a></li>
-					<li class="menu__item"><a class="menu__link" data-switch>Case Studies</a></li>
-					<li class="menu__item"><a class="menu__link" data-switch>Musings</a></li>
-				</ul>
-			</div>
-			<div class="menu menu--code">
-				<ul class="menu__inner">
-					<li class="menu__item"><a class="menu__link" data-switch>On Coding</a></li>
-					<li class="menu__item"><a class="menu__link" data-switch>Experiments</a></li>
-					<li class="menu__item"><a class="menu__link" data-switch>Current Projects</a></li>
-					<li class="menu__item"><a class="menu__link" data-switch>Tutorials</a></li>
-					<li class="menu__item"><a class="menu__link" data-switch>> Find me on GitHub</a></li>
-				</ul>
-			</div>
-			<div class="content__bottom">
-				<div class="switch mode mode--design">
-					<a class="switch__item switch__item--current">Designer</a>
-					<a class="switch__item"><span class="mode mode--design" data-switch data-glitch>Coder</span></a>
-				</div>
-				<div class="link-wrap">
-					<a class="contact-link mode mode--design" data-switch data-glitch>Work with me</a>
-				</div>
-			</div>
-		</div>
-    </main>
-
+      <section class="items-wrap">
+        <a href="#" class="item">
+          <img class="item__image" src="img/item01.jpg" alt="item01"/>
+          <h2 class="item__title">Magnificence</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item02.jpg" alt="item02"/>
+          <h2 class="item__title">Electrifying</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item03.jpg" alt="item03"/>
+          <h2 class="item__title">Dynamic</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item04.jpg" alt="item04"/>
+          <h2 class="item__title">Crucial</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item05.jpg" alt="item05"/>
+          <h2 class="item__title">Awe-inspiring</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item06.jpg" alt="item06"/>
+          <h2 class="item__title">Serene</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item07.jpg" alt="item07"/>
+          <h2 class="item__title">Vulnerable</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item08.jpg" alt="item08"/>
+          <h2 class="item__title">Bountiful</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item09.jpg" alt="item09"/>
+          <h2 class="item__title">Endangered</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item10.jpg" alt="item10"/>
+          <h2 class="item__title">Beautiful</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item11.jpg" alt="item11"/>
+          <h2 class="item__title">Inspiring</h2>
+        </a>
+        <a href="#" class="item">
+          <img class="item__image" src="img/item12.jpg" alt="item12"/>
+          <h2 class="item__title">Refreshing</h2>
+        </a>
+      </section>
+      <section class="related">
+        <p>If you enjoyed this demo you might also like:</p>
+        <a href="http://tympanus.net/Development/MorphingSearch/">Morphing Search</a><br />
+        <a href="http://tympanus.net/Development/TripleViewLayout/">Sliding Triple View Layout</a>
+      </section>
+    </div><!-- /container -->
+    <!-- open/close -->
     <div class="overlay overlay-door">
       <button type="button" class="overlay-close" onclick="toggleOverlay();">Close</button>
       <nav>
@@ -237,64 +258,156 @@
         </ul>
       </nav>
     </div>
-
     <script src="js/classie.js"></script>
     <script src="js/door.js"></script>
-	<script src="js/imagesloaded.pkgd.min.js"></script>
-	<script src="js/anime.min.js"></script>
-	<script src="js/charming.min.js"></script>
-	<script src="js/dev.js"></script>
-	<script src="js/page.js"></script>
-	<script>
+    <script>
+      (function() {
         var support = { animations : Modernizr.cssanimations },
           animEndEventNames = { 'WebkitAnimation' : 'webkitAnimationEnd', 'OAnimation' : 'oAnimationEnd', 'msAnimation' : 'MSAnimationEnd', 'animation' : 'animationend' },
           animEndEventName = animEndEventNames[ Modernizr.prefixed( 'animation' ) ],
           onEndAnimation = function( el, callback ) {
             var onEndCallbackFn = function( ev ) {
-                if( support.animations ) {
-                    if( ev.target != this ) return;
-                    this.removeEventListener( animEndEventName, onEndCallbackFn );
-                }
-                if( callback && typeof callback === 'function' ) { callback.call(); }
+              if( support.animations ) {
+                if( ev.target != this ) return;
+                this.removeEventListener( animEndEventName, onEndCallbackFn );
+              }
+              if( callback && typeof callback === 'function' ) { callback.call(); }
             };
             if( support.animations ) {
-                el.addEventListener( animEndEventName, onEndCallbackFn );
-            } else {
-                onEndCallbackFn();
+              el.addEventListener( animEndEventName, onEndCallbackFn );
+            }
+            else {
+              onEndCallbackFn();
             }
           };
-          containers = [].slice.call( document.querySelectorAll( '.container' ) ),
+
+        var containers = [].slice.call( document.querySelectorAll( '.container' ) ),
           containersCount = containers.length,
           nav = document.querySelector( 'nav.thumb-nav' ),
           pageTriggers = [].slice.call( nav.children ),
-          //isAnimating = false,
-          current = 0,
-          is3DBuggy = navigator.userAgent.indexOf('Firefox') > 0;
-          switchCtrls = document.querySelector('.switch'),
-          switchModeCtrls = {
-            'design' : switchCtrls.firstElementChild,
-            'code' : switchCtrls.lastElementChild
-          };
-        //pieces = document.querySelector('.pieces');
-        //glitchElems = document.querySelectorAll('[data-glitch]');
-        contact = { el: document.querySelector('.contact-link') };
-        title = { el: document.querySelector('.title > .title__inner') };
-        menuCtrl = document.querySelector('.btn--menu');
-        menu = {
-          'design' : {
-            'wrapper': document.querySelector('.menu'),
-            'items': document.querySelector('.menu').firstElementChild.querySelectorAll('.menu__inner a')
-          },
-          'code' : {
-            'wrapper': document.querySelector('.menu--code'),
-            'items': document.querySelectorAll('.menu--code > .menu__inner a')
+          isAnimating = false, current = 0;
+
+        function init() {
+          resetScroll();
+          // disable scrolling
+          window.addEventListener( 'scroll', noscroll );
+          // set current page trigger
+          classie.add( pageTriggers[ current ], 'thumb-nav__item--current' );
+          // set current container
+          classie.add( containers[ current ], 'container--current' );
+          // initialize events
+          initEvents();
+        }
+
+        function initEvents() {
+          // slideshow navigation
+          pageTriggers.forEach( function( pageTrigger ) {
+            pageTrigger.addEventListener( 'click', function( ev ) {
+              ev.preventDefault();
+              navigate( this );
+            } );
+          } );
+
+          // open each container's content area when clicking on the respective trigger button
+          containers.forEach( function( container ) {
+            container.querySelector( 'button.trigger' ).addEventListener( 'click', function() {
+              toggleContent( container, this );
+            } );
+          } );
+
+          // keyboard navigation events
+          document.addEventListener( 'keydown', function( ev ) {
+            var keyCode = ev.keyCode || ev.which,
+              isContainerOpen = containers[ current ].getAttribute( 'data-open' ) == 'open';
+
+            switch (keyCode) {
+              // left key
+              case 37:
+                if( current > 0 && !isContainerOpen ) {
+                  navigate( pageTriggers[ current - 1 ] );
+                }
+                break;
+              // right key
+              case 39:
+                if( current < containersCount - 1 && !isContainerOpen ) {
+                  navigate( pageTriggers[ current + 1 ] );
+                }
+                break;
+            }
+          } );
+        }
+
+        function navigate( pageTrigger ) {
+          var oldcurrent = current,
+            newcurrent = pageTriggers.indexOf( pageTrigger );
+
+          if( isAnimating || oldcurrent === newcurrent ) return;
+          isAnimating = true;
+
+          // reset scroll
+          allowScroll();
+          resetScroll();
+          preventScroll();
+
+          var currentPageTrigger = pageTriggers[ current ],
+            nextContainer = document.getElementById( pageTrigger.getAttribute( 'data-container' ) ),
+            currentContainer = containers[ current ],
+            dir = newcurrent > oldcurrent ? 'left' : 'right';
+
+          classie.remove( currentPageTrigger, 'thumb-nav__item--current' );
+          classie.add( pageTrigger, 'thumb-nav__item--current' );
+
+          // update current
+          current = newcurrent;
+
+          // add animation classes
+          classie.add( nextContainer, dir === 'left' ? 'container--animInRight' : 'container--animInLeft' );
+          classie.add( currentContainer, dir === 'left' ? 'container--animOutLeft' : 'container--animOutRight' );
+
+          onEndAnimation( currentContainer, function() {
+            // clear animation classes
+            classie.remove( currentContainer, dir === 'left' ? 'container--animOutLeft' : 'container--animOutRight' );
+            classie.remove( nextContainer, dir === 'left' ? 'container--animInRight' : 'container--animInLeft' );
+
+            // clear current class / set current class
+            classie.remove( currentContainer, 'container--current' );
+            classie.add( nextContainer, 'container--current' );
+
+            isAnimating = false;
+          } );
+        }
+
+        // show content section
+        function toggleContent( container, trigger ) {
+          if( classie.has( container, 'container--open' ) ) {
+            classie.remove( container, 'container--open' );
+            classie.remove( trigger, 'trigger--active' );
+            classie.remove( nav, 'thumb-nav--hide' );
+            container.setAttribute( 'data-open', '' );
+            preventScroll();
           }
-        };
-        overlay = document.querySelector('.overlay-dev');
-        // The current mode.
-        let mode = 'design', disablePageFx, isAnimating;
+          else {
+            classie.add( container, 'container--open' );
+            classie.add( trigger, 'trigger--active' );
+            classie.add( nav, 'thumb-nav--hide' );
+            container.setAttribute( 'data-open', 'open' );
+            allowScroll();
+          }
+        }
+
+        // scroll functions
+        function resetScroll() { document.body.scrollTop = document.documentElement.scrollTop = 0; }
+        function preventScroll() { window.addEventListener( 'scroll', noscroll ); }
+        function allowScroll() { window.removeEventListener( 'scroll', noscroll ); }
+        function noscroll() { 
+          window.scrollTo( 0, 0 ); 
+        }
 
         init();
-	</script>
+
+        // For Demo purposes only (prevent jump on click)
+        [].slice.call( document.querySelectorAll('.items-wrap a') ).forEach( function(el) { el.onclick = function() { return false; } } );
+      })();
+    </script>
   </body>
 </html>
